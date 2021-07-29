@@ -25,3 +25,9 @@ Steps
 git branch --merged
 git branch --no-merged
 git branch -r --merged
+
+
+# Push new local branch to Remote
+```sh
+git push -u origin key_feature_merge
+```
