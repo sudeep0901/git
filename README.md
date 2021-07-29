@@ -22,9 +22,9 @@ Steps
     git reset --hard origin/main
 
 # Identify Merged Branches
-git branch --merged
-git branch --no-merged
-git branch -r --merged
+git branch --merged (shows - Merged branches)
+git branch --no-merged (show branches which are not yet merged into main branch)
+git branch -r --merged (check remote branch for branches)
 
 
 # Push new local branch to Remote
