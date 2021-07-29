@@ -17,3 +17,6 @@ Steps
     get commit id
 4. git show origin/main
     this will show remote and local branch diff
+5. collbarators
+    git pull
+    git reset --hard origin/main
