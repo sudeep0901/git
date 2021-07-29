@@ -5,7 +5,7 @@ git practice
 
 ## Ignore remote version and push local version forcefully
 
-sh```
+```sh
 git push -f or --force
 ```
 
@@ -20,3 +20,8 @@ Steps
 5. collbarators
     git pull
     git reset --hard origin/main
+
+# Identify Merged Branches
+git branch --merged
+git branch --no-merged
+git branch -r --merged
