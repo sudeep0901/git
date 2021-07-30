@@ -31,3 +31,39 @@ git branch -r --merged (check remote branch for branches)
 ```sh
 git push -u origin key_feature_merge
 ```
+
+# Delete a git branch
+
+## Local Branch
+git branch -d new_feature
+git branch -D new_feature //Force Delete
+
+## Remote Branch
+git push origin :new_feature
+git push origin <local>:<remote>
+
+git push --delete origin new_feature
+git push -d origin new_feature
+
+
+# git Prune Stale Branches 
+Delete all stale remote tracking branches
+Stale branch: a remote trackign branch that no longer tracks anything because actual branch in remote is deleted
+
+git remote prune origin
+
+git remote prune origin --dry-run
+
+git fetch -p
+
+git config --global fetch.prune true
+
+git prune (prunes all unreachable objects)
+or
+git gc
+
+# Tags in git
+Tag is a name to a commit
+## Light weight Tags
+
+git tag issue1234 <CommitID>
