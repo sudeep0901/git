@@ -104,3 +104,44 @@ git tag issue1234 <CommitID>
 
 ## Annotated Tag
 git tag -a v1.0.0 -m "Version 1.0" 06b7639c198b7ad014d1c05d31e366919a9ffea8
+
+
+### List Tag
+git tag
+git tag --list
+git tag -l
+
+### Search a tag in git
+git tag -l "v2*"
+
+## List Tag with annotations
+
+git tag -l -n
+git show <tagname>
+git diff <tag1> <tag2>
+
+## Delete Tag 
+git tag --delete push  
+git tag -d push
+
+## Push git Tags to Remote
+git push origin <tagName>
+### Push all tags to Remote
+git push origin --tags
+
+## Delete Remote Tag
+git push origin :tagstarted
+git push origin --delete tagstarted
+git push origin -d tagstarted
+
+## Checkout Tags
+Create a  branch and checkout tag
+```sh
+git checkout -b new_branch tagstarted
+
+Below not preferred -> No Branch only local changes and will be lost when switched to other branch and is detached head
+git checkout tagstarted
+
+create a branch and reattach head
+git checkout -b temp_branch
+```
