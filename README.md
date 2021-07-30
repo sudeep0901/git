@@ -101,3 +101,6 @@ Tag is a name to a commit
 ## Light weight Tags
 
 git tag issue1234 <CommitID>
+
+## Annotated Tag
+git tag -a v1.0.0 -m "Version 1.0" 06b7639c198b7ad014d1c05d31e366919a9ffea8
