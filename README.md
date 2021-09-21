@@ -159,3 +159,11 @@ git diff --cached
 
 git add --patch
 
+# cherry picking
+![](2021-09-21-11-34-28.png)
+
+git cherry-pick shacommit
+git cherry-pick shacommit..shacommit1
+
+
+# Create Diff Patches
