@@ -14,7 +14,7 @@ Steps
 2. git fetch
 3. Inspect changes
     git log origin/main
-    get commit id
+    git commit id
 4. git show origin/main
     this will show remote and local branch diff
 5. collbarators
@@ -69,18 +69,24 @@ git push -u origin key_feature_merge
 # Delete a git branch
 
 ## Local Branch
+
+```sh
 git branch -d new_feature
 git branch -D new_feature //Force Delete
-
+```
 ## Remote Branch
+```sh
+
 git push origin :new_feature
 git push origin <local>:<remote>
 
 git push --delete origin new_feature
 git push -d origin new_feature
 
-
+```
 # git Prune Stale Branches 
+```sh
+
 Delete all stale remote tracking branches
 Stale branch: a remote trackign branch that no longer tracks anything because actual branch in remote is deleted
 
@@ -145,3 +151,11 @@ git checkout tagstarted
 create a branch and reattach head
 git checkout -b temp_branch
 ```
+
+# Git Interactive
+git add -i or interactive
+
+git diff --cached
+
+git add --patch
+
